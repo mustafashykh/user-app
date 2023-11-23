@@ -27,9 +27,6 @@ const UserList: React.FC = () => {
                 Edit User
               </button>
               <button
-                // onClick={() => {
-                //   dispatch({ type: "DELETE_USER", payload: user.id });
-                // }}
                 onClick={() => {
                   setOpen(true);
                   setUserId(user.id);

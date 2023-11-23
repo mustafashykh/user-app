@@ -1,4 +1,3 @@
-// UserContext.tsx
 import React, { createContext, useReducer, useContext, ReactNode } from "react";
 
 export interface User {
@@ -26,9 +25,9 @@ type Dispatch = (action: Action) => void;
 
 type State = {
   users: User[];
-  form: User; // Assuming you have a form property in your state
-  savedForm: User | null; // Assuming you want to save the form data
-  open: Boolean; // check if the form is open or not
+  form: User; 
+  savedForm: User | null;
+  open: Boolean; 
 };
 
 const initialState: State = {
