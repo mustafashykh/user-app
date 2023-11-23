@@ -91,7 +91,7 @@ const UserForm: React.FC = () => {
 
   return (
     state.open && (
-      <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-500">
+      <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-500 mt-4">
         <div className="relative max-w-md mx-auto mt-4 p-6 bg-white shadow-md rounded-md">
           <h2 className="text-2xl font-semibold mb-4"> User Form </h2>
           <button
