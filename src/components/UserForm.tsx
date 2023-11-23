@@ -90,11 +90,12 @@ const UserForm: React.FC = () => {
   }, [state.form]);
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-500">
-      {state.open && (
-        <div className="max-w-md mx-auto mt-4 p-6 bg-white shadow-md rounded-md">
+    state.open && (
+      <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-500">
+        <div className="relative max-w-md mx-auto mt-4 p-6 bg-white shadow-md rounded-md">
           <h2 className="text-2xl font-semibold mb-4"> User Form </h2>
           <button
+            className="absolute text-2xl right-[1.25rem] top-[1.25rem]"
             type="button"
             onClick={() => dispatch({ type: "SHOW_FORM", payload: false })}
           >
@@ -255,7 +256,7 @@ const UserForm: React.FC = () => {
             </div>
             <button
               type="submit"
-              className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue"
+              className="mr-3 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue"
               onClick={() => console.log("Clickedd  d")}
             >
               Save
@@ -268,8 +269,8 @@ const UserForm: React.FC = () => {
             </button>{" "}
           </form>
         </div>
-      )}
-    </div>
+      </div>
+    )
   );
 };
 
